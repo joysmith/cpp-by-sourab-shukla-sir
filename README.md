@@ -242,3 +242,65 @@ Formal arguments can be of three types
 <img src="notes/call by reference.png" width="400">
 
 ---
+
+## Inline function
+
+#### Benefits of function
+
+- easy to read
+- easy to modify
+- avoids rewriting of same code
+- easy to debug
+- better memory utilization
+
+#### Function saves memory
+
+- function in a program is to save memory space which becomes appreciable when a function is likely to be called many times
+
+#### Function is time consuming
+
+- However every time a function is called, it takes lot of extra time in executing a series of instructions for tasks such as jumping to the function, saving registers, pushing arguments into the stack and returning to the calling function
+
+- so when function is small it is worthless to spend so much time in such tasks in cost of saving comparatively small space
+
+#### Inline function
+
+- To eliminate the cost of calls to small functions, C++ proposes a new feature called inline function
+- An inline function is a function that is expanded in line when it is invoked
+- Compiler replace the function call with the corresponding code
+
+#### Inline is a request
+
+- inline is a request not a command
+- the benefit of speed of inline functions reduces as the function grows in size
+- so the compiler may ignore the request in some situations.
+
+Few of them
+
+- Function containing loop, switch, goto.
+- Function with recursion
+- Containing static variable
+
+<img src="notes/inline function.png" width="400">
+
+---
+
+#### Function overloading
+
+There are three type in C++ to implement polymorphism
+
+- function overloading (compile time polymorphism)
+- operator overloading (compile time polymorphism)
+- virtual function (run time polymorphism)
+
+🔴 lecture 5 part 4 code
+
+#### How function overloading is resolved
+
+- first, C++ tries to find an exact match. THis is the case where the actual arguments exactly matches the parameter type of one of the overloaded function
+- If no exact match is found, C++ tries to find a match through promotion
+  - char, unsigned char, and short is promoted to an int
+  - float is promoted to double
+- if no promotion is found. C++ tries to find a match through standard conversion
+
+##
