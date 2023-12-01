@@ -190,3 +190,55 @@ class box{
 - Reference variable can not be updated
 
 ---
+
+## Functions in C++
+
+#### What is function?
+
+- Function is a block of code performing a unit task
+- Function has a name, return type and arguments
+- Function is a way to achieve modularization
+- Functions are predefined and user defined
+- Predefined functions are declared in header files and defined in library files
+
+#### Definition, Declaration and Call
+
+<img src="notes/local function declaration.png" width="400">
+
+- Function declaration is also know as function prototype
+- Functions need to be declared before use(just like variables)
+- Functions can be declared locally or globally
+- Return type functionName(argumentList);
+- Function definition is a block of code
+
+#### Declaration
+
+#### Ways to define a function
+
+- Takes nothing, return nothing
+- Takes something, return nothing
+- Takes nothing, return something
+- Takes something, returns something
+
+#### Formal and Actual
+
+takes something return something
+<img src="notes/formal and actual.png" width="400">
+
+#### Types of formal arguments
+
+Formal arguments can be of three types
+
+1. Ordinary variable of any type
+1. Pointer variable
+1. Reference variable
+
+#### Call by value, call by address and call by reference
+
+<img src="notes/call by value.png" width="400">
+
+<img src="notes/call by address.png" width="400">
+
+<img src="notes/call by reference.png" width="400">
+
+---
