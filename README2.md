@@ -641,3 +641,65 @@ int main(){
 //x = 3
 //x = 3
 ```
+
+---
+
+```cpp
+#include<iostream>
+using namespace std;
+
+class Complex{
+private:
+    int a;
+    int b;
+
+public:
+    void setData(int x, int y){
+        a = x;
+        b = y;
+    }
+
+    void showData(){
+        cout << a << " " << b << endl;
+    }
+
+    friend Complex operator +(Complex, Complex);
+};
+
+
+// how to use preexisting operator name for function naming
+Complex operator +( Complex X, Complex Y){
+    Complex temp;
+    temp.a = X.a + Y.a;
+    temp.b = X.b + Y.b;
+    return(temp);
+}
+
+
+int main(){
+    Complex c1, c2, c3;
+    c1.setData(3, 4);
+    c2.setData(5, 6);
+
+    // old explanation
+    // c1 calls member function i.e "+" operator, then c2 passed as an argument, then what is returned by "+" is assigned to c3
+    // c3 = c1.operator+(c2)
+
+    // new explanation
+    // c3 = operator+(c1, c2)
+    c3 = c1 + c2;
+
+    c3.showData();
+
+    return 0;
+}
+
+
+
+// output
+// 8 10
+```
+
+---
+
+##
