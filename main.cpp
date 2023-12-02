@@ -1,12 +1,29 @@
-class box{
-  int l, b, h;
+#include<iostream>
+using namespace std;
 
-  void setDimension(int x, int y, int z){
-    // logic
-  }
+class Account{
+  private:
+  // instance member variable
+    int balance;
+    //static member variable or class variable
+    static float rateOfInterest;
 
+  public:
+    void setBalance(int b){
+      balance = b;
+    }
 
-  void showDimension(){
-    // logic
-  }
+    static void setRateOfInterest(float r){
+      rateOfInterest = r;
+    }
 };
+
+
+//membership label ::
+// by default is 0
+float Account:: rateOfInterest = 3.5f;
+
+void main(){
+  Account a1, a2;
+  Account::setRateOfInterest(4.5f);
+}
