@@ -73,4 +73,6 @@ class box{
 
 #### Software development process in c++
 
+objective - we have to make exe file i.e our software.
+
 <img src="notes/software development.png" width="400">
