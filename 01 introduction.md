@@ -1,4 +1,4 @@
-#### History of C++
+### History of C++
 
 <img src="notes/Bjarne.jpg" width="400">
 
@@ -8,14 +8,14 @@
 - C with classes
 - 1983 C++
 
-#### Facts of C++
+### Facts of C++
 
 - C++ OOP was inspired by computer simulation language called Simula67
 - JAVA is written in C++
 - Major operating systems of modern times are written in C++
 - C++ is world 4 most used programming language
 
-#### Features of C++
+### Features of C++
 
 - C++ is a middle level language, means we can do low level programming(machine dependant coding- device drivers) and high level programming(application software- hardware independent coding)
 - C++ support principle of Object oriented paradigm
@@ -25,7 +25,7 @@
 1. object-oriented language tradition, represented by the class enhancements C++ adds to C
 1. generic programming, supported by C++ templates
 
-#### Comparison between C and C++
+### Comparison between C and C++
 
 - C++ is a super set of C language, means we can use old features(like array, loops, conditions, data type, etc) in C++ provided in C
 - C++ programs can use existing C software libraries
@@ -34,7 +34,7 @@
 - C adopts procedural oriented programming
 - C++ adopts object oriented programming
 
-#### What is Object oriented programming
+### What is Object oriented programming
 
 - OOPs is a programming approach which revolves around the concept of "Objects".
 - Any entity in the system that can be defined as a set of properties and set of operations performed using entity's property set, is known as object
@@ -45,7 +45,7 @@
   1. Polymorphism
   1. Inheritance
 
-#### Classes and Objects
+### Classes and Objects
 
 - class is a blueprint of an object
 - class is class a description of Object's property set and set of operations
@@ -71,7 +71,7 @@ class box{
 };
 ```
 
-#### Software development process in c++
+### Software development process in c++
 
 objective - we have to make exe file i.e our software.
 
