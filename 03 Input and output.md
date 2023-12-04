@@ -1,4 +1,4 @@
-#### Output instruction
+### Output instruction
 
 - In C, standard output device is monitor and printf() is use to send data/message to monitor
 - printf() is a predefine function
@@ -9,7 +9,7 @@
 
 <img src="notes/output instruction.png" width="400">
 
-#### Input instrucction
+### Input instrucction
 
 - In C, standard input is keyboard and scanf() is use to receive data from keyboard
 - scanf() is a predefined function in C
@@ -19,7 +19,7 @@
 
 <img src="notes/input instruction.png" width="400">
 
-#### About iostream.h
+### About iostream.h
 
 - According to ANSI standards for C language, explicit declaration of function is recommended but not mandatory
 - ANSI standards for C++ language says explicit declaration of function is compulsory (means declaration of function in header file is compulsory in C++)
@@ -28,12 +28,12 @@
 - Header files contains declaration of identifier
 - Identifier can be variable name, function name, macro, object etc.
 
-#### endl
+### endl
 
 - Inserting endl into the output stream causes the screen cursor to move to the beginning of the next line.
 - endl is a manipulator and it is declared in iostream.h in C++
 - '\n' character also works as it works in C for moving into next line
 
-#### Sample program
+### Sample program
 
 <img src="notes/sample program.png" width="400">
