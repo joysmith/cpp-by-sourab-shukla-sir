@@ -38,13 +38,12 @@
 
 - OOPs is a programming approach which revolves around the concept of "Objects".
 - Any entity in the system that can be defined as a set of properties and set of operations performed using entity's property set, is known as object
-- 5 principle
-
-1. Encapsulations
-1. Data Hiding
-1. Abstraction
-1. Polymorphism
-1. Inheritance
+- 5 principle of OOPs
+  1. Encapsulations
+  1. Data Hiding
+  1. Abstraction
+  1. Polymorphism
+  1. Inheritance
 
 #### Classes and Objects
 
