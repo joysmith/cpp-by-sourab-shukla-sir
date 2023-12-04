@@ -1,0 +1,3 @@
+- Class inside a class is called nested class
+- A nested class is a member and as such has the same access rights as any other member.
+- The members of an enclosing class have no special access to members of a nested class; the usual access rules shall be obeyed.
