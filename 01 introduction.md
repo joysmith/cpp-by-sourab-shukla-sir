@@ -1,6 +1,7 @@
 #### History of C++
 
-<img src="notes/Bjarne.jpg" width="400">  
+<img src="notes/Bjarne.jpg" width="400">
+
 - Invented by Bjarne stroustrup
 - 1978-1979 launch
 - AT & T bell labs
