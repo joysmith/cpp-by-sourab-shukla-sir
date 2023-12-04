@@ -1,10 +1,6 @@
----
+### Constants
 
-## Identifier
-
-#### Constants
-
-- any information is constant
+- any information is called constant
 - every software manage information
 - data = information(name, song, photo, numbers) = constant
 - types of constant
@@ -13,9 +9,9 @@
 
 - secondary constant are made with the help of primary constant
 
-<img src="notes/in memory.png" width="400">
+### variables
 
-#### variables
+<img src="notes/in memory.png" width="400">
 
 - variables are the names of memory locations where we store data
 - variable name is any combinations of alphabet (a-z or A-Z), digit(0-9) and underscore(\_)
@@ -25,9 +21,7 @@
 
 <img src="notes/keywords.png" width="400">
 
----
-
-## Identifier Data types
+### Data types
 
 - int: integer
 - char: character
