@@ -378,3 +378,189 @@ int main(){
 <img src="notes/new keyword.png width="400">
 <img src="notes/new keyword array .png" width="400">
 <img src="notes/delete.png" width="400">
+
+#### Method overloading
+
+#### Method Overriding
+
+```cpp
+#include<iostream>
+using namespace std;
+
+class A {
+    void f1(){
+
+    }
+};
+
+class B : public A{
+    // method overriding
+    void f1(){
+
+    }
+};
+
+```
+
+---
+
+```cpp
+#include<iostream>
+using namespace std;
+
+class A {
+    void f1(){
+
+    }
+
+    void f2(){
+
+    }
+};
+
+class B : public A{
+    // method overriding: when name is same
+    void f1(){
+
+    }
+
+    // method hiding: when name is same argument are different
+    void f2(int x){
+
+    }
+};
+
+```
+
+---
+
+```cpp
+#include<iostream>
+using namespace std;
+
+class Car {
+public:
+    void shiftGear(){ }
+
+    void f2(){ }
+};
+
+class SportsCar : public Car{
+public:
+    // method overriding
+    void shiftGear(){ }
+
+    // method overriding
+    void f1(){ }
+
+    // method hiding
+    void f2(int x){ }
+};
+
+
+int main(){
+    SportsCar obj;
+    obj.shiftGear();
+
+    // obj.f2(); //error
+    obj.f2(4);
+
+    return 0;
+}
+
+
+```
+
+#### Method hiding
+
+```cpp
+#include<iostream>
+using namespace std;
+
+class A {
+public:
+    void f1(){
+
+    }
+
+    void f2(){
+
+    }
+};
+
+class B : public A{
+public:
+    // method overriding
+    void f1(){
+
+    }
+
+    // method hiding
+    void f2(int x){
+
+    }
+};
+
+
+int main(){
+    B obj;
+    // B class version: early binding
+    obj.f1();
+
+    // error: function overloading all version of function must be in one class
+    obj.f2();
+
+    // B class version: early binding
+    obj.f2(5);
+
+    return 0;
+}
+
+// output
+// error
+
+```
+
+---
+
+## Virtual function
+
+#### Base class pointer
+
+- Base class pointer can point to the object of any of its descendant class
+- But its converse is not true means child class pointer cannot point to parent class
+
+```cpp
+#include<iostream>
+using namespace std;
+
+class A{
+public:
+    // for late binding
+    // not pointer but pointer content
+    virtual void f1(){}
+};
+
+class B : public A{
+public:
+    void f1(){} // function overriding
+    void f2(){}
+};
+
+int main(){
+    A *p, o1;
+    B o2;
+    p = &o2;
+    p -> f1(); //A
+
+    return 0;
+}
+
+
+```
+
+---
+
+## Virtual function
+
+-
