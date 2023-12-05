@@ -9,7 +9,7 @@
 
 <img src="notes/output instruction.png" width="400">
 
-### Input instrucction
+### Input instruction
 
 - In C, standard input is keyboard and scanf() is use to receive data from keyboard
 - scanf() is a predefined function in C
