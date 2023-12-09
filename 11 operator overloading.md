@@ -1,5 +1,9 @@
 ### Operator overloading
 
+Can we change function name to '+'
+or How to use operator name or symbol as function name
+Can we define new meaning for preexisting operator
+
 ```cpp
 #include<iostream>
 using namespace std;
@@ -35,7 +39,7 @@ int main(){
 
     // won't work compiler don't know the definition
     // c3 = c1 + c2;
-
+    // c1 call add function and passes c2 as argument, then what returns by sum is assigned to c3
     c3 = c1.add(c2);
     c3.showData();
 
@@ -145,6 +149,7 @@ int main(){
     c3 = c1.operator + (c2);
 
     // Approach 2: can be written as
+     // c1 call add function and passes c2 as argument, then what returns by + is assigned to c3
     c3 = c1 + c2;
 
     c3.showData();
@@ -185,8 +190,9 @@ public:
    //
    Complex operator-(){
         Complex temp;
-        temp.a = -a;
-        temp.b = -b;
+
+        temp.a =-a;
+        temp.b =-b;
         return(temp);
     }
 };
@@ -197,6 +203,7 @@ int main(){
     c1.setData(3, 4);
 
     // approach 1
+    // c1 calls - operator and c1 didn't pass argument, and what - operator returns assigned to c2
     c2 = c1.operator-();
 
     // approach 2
@@ -206,6 +213,9 @@ int main(){
 
     return 0;
 }
+
+// Output
+// -3 -4
 ```
 
 ---
