@@ -13,6 +13,7 @@
 #include <iostream>
 using namespace std;
 
+// any pure virtual function will make class abstract
 class Person{
 public:
     // how to make pure virtual function
