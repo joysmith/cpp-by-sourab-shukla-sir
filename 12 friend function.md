@@ -40,6 +40,8 @@ void fun(Complex c){
 int main(){
     Complex c1;
     c1.setData(1,2);
+
+    // how to call friend function
     fun(c1);
 
 

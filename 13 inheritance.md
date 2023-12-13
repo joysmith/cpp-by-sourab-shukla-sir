@@ -561,6 +561,8 @@ int main(){
 
 ---
 
-## Virtual function
+### Multiple inheritance
 
--
+- A class which contain more base class and only one derive class is called multiple inheritance
+
+<img src="notes/multiple inheritance issue.png" width="400">
