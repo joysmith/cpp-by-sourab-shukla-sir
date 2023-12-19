@@ -566,3 +566,147 @@ int main(){
 - A class which contain more base class and only one derive class is called multiple inheritance
 
 <img src="notes/multiple inheritance issue.png" width="400">
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class A{
+public:
+    void printmessage(){
+        cout << "A class has been called";
+    }
+};
+
+class B{
+public:
+    void printmessage(){
+        cout << "B class has been called";
+    }
+};
+
+class AB : public A, public B{
+public:
+    void printmessage(){
+        cout << "AB class has been called";
+    }
+};
+
+int main(){
+    A obj;
+    obj.printmessage();
+
+    return 0;
+}
+
+
+// output
+// A class has been called
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class A{
+public:
+    void printmessage(){
+        cout << "A class has been called";
+    }
+};
+
+class B{
+public:
+    void printmessage(){
+        cout << "B class has been called";
+    }
+};
+
+class AB : public A, public B{
+public:
+    void printmessage(){
+        cout << "AB class has been called";
+    }
+};
+
+int main(){
+    B obj;
+    obj.printmessage();
+
+    return 0;
+}
+
+
+// output
+// B class has been called
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class A{
+public:
+    void printmessage(){
+        cout << "A class has been called";
+    }
+};
+
+class B{
+public:
+    void printmessage(){
+        cout << "B class has been called";
+    }
+};
+
+class AB : public A, public B{
+public:
+    void printmessage(){
+        cout << "AB class has been called";
+    }
+};
+
+int main(){
+    AB obj;
+    obj.printmessage();
+
+    return 0;
+}
+
+// output
+// AB class has been called
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class A{
+public:
+    void printmessage(){
+        cout << "A class has been called";
+    }
+};
+
+class B{
+public:
+    void printmessage(){
+        cout << "B class has been called";
+    }
+};
+
+class AB : public A, public B{
+
+};
+
+int main(){
+    AB obj;
+    obj.printmessage();
+
+    return 0;
+}
+
+// output
+//error: request for member 'printmessage' is ambiguous
+//   24 |     obj.printmessage();
+```
