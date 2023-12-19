@@ -189,4 +189,111 @@ int main(){
 //3
 ```
 
-###
+### one class type to another class type
+
+<img src="notes/different class.png" width="400">
+
+<img src="notes/class type to another class type.png" width="400">
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Item{
+private:
+    int a,b;
+
+public:
+    void showData(){
+        cout << "a: " << a << endl << "b: " << b << endl;
+    }
+};
+
+class Product{
+private:
+    int m, n;
+
+public:
+    void setData(int x, int y){
+        m = x;
+        n = y;
+    }
+
+};
+
+int main(){
+
+    Item i1;
+    Product p1;
+    p1.setData(3,4);
+    i1 = p1;
+    i1.showData();
+
+    return 0;
+}
+
+//output
+//cannot convert 'Product' to 'Item
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Product{
+private:
+    int m, n;
+
+public:
+    void setData(int x, int y){
+        m = x;
+        n = y;
+    }
+
+    int getM(){
+        return m;
+    }
+
+    int getN(){
+        return n;
+    }
+};
+
+
+class Item{
+private:
+    int a,b;
+
+public:
+    Item(){
+    }
+
+    // constructor
+    Item(Product p){
+        a = p.getM();
+        b = p.getN();
+    }
+
+    void showData(){
+        cout << "a: " << a << endl << "b: " << b << endl;
+    }
+};
+
+
+
+int main(){
+
+    Item i1;
+    Product p1;
+    p1.setData(3,4);
+    i1 = p1;
+    i1.showData();
+
+    return 0;
+}
+
+//output
+//a: 3
+//b: 4
+
+```
