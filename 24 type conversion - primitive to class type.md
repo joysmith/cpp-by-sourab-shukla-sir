@@ -43,6 +43,8 @@ int main(){
 //  3
 ```
 
+---
+
 <img src="notes/primitive type to class type.png" width="400">
 
 ```cpp
