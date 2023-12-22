@@ -1,9 +1,17 @@
+### Types of conversion
+
+1. primitive type to primitive type
+1. primitive type to class type (using constructor)
+1. class type to primitive type (using casting operator)
+1. class type to class type (using constructor or casting operator)
+
 ### Primitive type to class type conversion
 
 - int, char, float, double are primitive type
 - class type is any class you define
 - data type means category of data
 
+primitive types conversion
 <img src="notes/automatic conversion.png" width="400">
 
 <img src="notes/primitive type to class type.png" width="400">
@@ -31,6 +39,8 @@ int main(){
 
     Complex c1;
     int x = 5;
+
+    // cannot convert int to complex type
     c1 = x;
 
     return 0;
@@ -41,6 +51,7 @@ int main(){
 
 ```
 
+- solution use constructor
 - Primitive type to class type can be implemented through constructor
 
 ```cpp
@@ -124,6 +135,8 @@ int main(){
     c1.showData();
 
     int x;
+
+    //error: cannot convert 'Complex' to 'int'
     x = c1;
     cout << x;
 
@@ -164,7 +177,7 @@ public:
         cout << "x: " << a << endl << "y: " << b << endl;
     }
 
-    // casting operator
+    // casting operator to convert 'Complex' to 'int'
     operator int(){
         return a;
     }
@@ -177,6 +190,8 @@ int main(){
     c1.showData();
 
     int x;
+
+    // casting operator to convert 'Complex' to 'int'
     x = c1; // x = c1.operator int ();
     cout << x;
 
@@ -226,6 +241,8 @@ int main(){
     Item i1;
     Product p1;
     p1.setData(3,4);
+
+    //cannot convert 'Product' to 'Item
     i1 = p1;
     i1.showData();
 
@@ -286,6 +303,8 @@ int main(){
     Item i1;
     Product p1;
     p1.setData(3,4);
+
+    // i1 constructor is called and p1 passed as argument
     i1 = p1;
     i1.showData();
 
