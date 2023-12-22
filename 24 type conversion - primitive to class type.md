@@ -12,7 +12,36 @@
 - data type means category of data
 
 primitive types conversion
+
 <img src="notes/automatic conversion.png" width="400">
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    int x = 4;
+    float y;
+
+    // converting int to float
+    y = x;
+    cout << y << endl;
+
+
+
+    float m = 3.14;
+    int n;
+    // converting float to int
+    n = m;
+    cout << n << endl;
+
+    return 0;
+}
+
+//output
+//  4
+//  3
+```
 
 <img src="notes/primitive type to class type.png" width="400">
 
@@ -96,6 +125,8 @@ int main(){
 // x: 5
 // y: 0
 ```
+
+---
 
 ### class type to primitive type conversion
 
@@ -203,6 +234,8 @@ int main(){
 //y: 4
 //3
 ```
+
+---
 
 ### one class type to another class type
 
